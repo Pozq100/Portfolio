@@ -1,0 +1,44 @@
+/*------------------------- Header Bar --------------------------*/
+.headerBar{
+    height: 8vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 4vw;
+    background: linear-gradient(#111111,#555555);
+    padding-right: 50px;
+    box-shadow: 0 6px 15px #777777;
+}
+
+.headerButton{
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.headerButton:hover{
+    color: var(--neon_green);
+    text-shadow: 0 0 10px var(--neon_green);
+    position: relative;
+    top: 5px;
+    border-bottom: 1px solid var(--neon_green);
+}
+
+/*------------------------- Intro ------------------------------- */
+.IntroWords{
+    color: white;
+    text-shadow: 0 0 8px white;
+    font-size: 1.2em;
+}
+
+.IntroIAM{
+    font-size: 2.5em;
+}
+
+.IntroName{
+    color: var(--neon_green);
+    text-shadow: 0 0 8px var(--neon_green);
+    text-decoration: underline;
+}

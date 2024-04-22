@@ -1,0 +1,179 @@
+.middleContainer{
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 0 20vh 0 20vh;
+    padding: 30px;
+    max-height: calc(125vh + 210px + 1.6em);
+}
+
+
+/* ------------------------------- Cards ----------------------------- */
+.allCards{
+    max-height: 125vh;
+    display: grid;
+    margin-top: 20px;
+    gap: 30px;
+    overflow-y: auto;
+    padding-top: 15px;
+}
+
+.cardContainer{
+    height: 25vh;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--neon_green);
+    position: relative;
+    width: calc(100% - 30px);
+    cursor: pointer;
+}
+
+.cardContainer:hover, .cardContainer:hover > .cardTags, .cardContainer:hover > .cardGrid > .cardSideImage{
+    border: 2px solid var(--neon_green);
+}
+
+.cardTags {
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    background-color: black;
+    box-shadow: 0 0 15px var(--neon_green);
+}
+
+.cardBG {
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    position: absolute;
+    z-index: -1;
+}
+
+.cardGrid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.cardSideImage {
+    width: 100%;
+    max-height: calc(25vh - 20px);
+    grid-row: 1/4;
+    margin: 8px 0 0 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.cardTitle{
+    color: white;
+    font-size: 1.4em;
+    padding: 10px 0 0 30px;
+    font-weight: bold;
+}
+
+.cardContent{
+    max-height: 75%;
+    grid-column: 2;
+    color: white;
+    padding: 10px 0 0 30px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    vertical-align: top;
+    
+}
+
+
+.cardButtons{
+    padding: 0 0 10px 30px;
+}
+
+.DemoButton{
+    height: 100%;
+    box-shadow: 0 0 10px white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.CodeButton{
+    height: 100%;
+    margin-left: 10px;
+    box-shadow: 0 0 10px white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.CodeButton > img {
+    height: 100%;
+    max-height: 25px;
+    vertical-align: middle;
+}
+
+.CodeButton:hover, .DemoButton:hover{
+    box-shadow: 0 0 10px var(--neon_green);
+    border: 2px solid var(--neon_green);
+}
+
+/* -------------------------------------------- Filters ------------------------------- */
+
+.filterContainer{
+    display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.filterTitle{
+    color: white;
+    margin-left: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.filter{
+    width: 20vw;
+    font-size: 1em;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.filterMenu{
+    background: #777777;
+    border: none;
+}
+
+.filterControl{
+    background: #777777;
+    border: none;
+    color: white;
+}
+
+.filterSort{
+    color: white;
+    margin-left: 15px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.filterSort.Selected{
+    background: grey;
+    color: var(--neon_green);
+}
+
+.filterSort:hover{
+    background:grey;
+}
