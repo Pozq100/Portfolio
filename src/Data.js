@@ -1,5 +1,5 @@
 // Images ------------------------
-import chessImage from './Assets/chess.png';
+// import chessImage from './Assets/chess.png';
 import synergyImage from './Assets/synergy.png'
 import algorithmImage from './Assets/algorithm.png'
 import portfolioImage from './Assets/portfolio.png'
