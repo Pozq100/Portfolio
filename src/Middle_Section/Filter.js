@@ -4,7 +4,8 @@ import 'react-dropdown/style.css';
 const filterCat = [
     { value: 'all', label: 'All'},
     { value: 'web', label: 'Web Application'},
-    { value: 'app', label: 'Android Application'}
+    { value: 'app', label: 'Android Application'},
+    { value: 'algo', label: 'Machine Learning'}
 ]
 
 const defaultOption = filterCat[0];

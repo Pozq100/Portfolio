@@ -12,6 +12,7 @@ import CardDetails from './Card_Details/CardDetails';
 import ViewCV from './CV/ViewCV';
 
 import Socials from './Socials/Socials';
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,10 +27,10 @@ function App() {
         <Route path="/card-details/:id" exact element={
           <CardDetails />
         }></Route>
-        <Route path="/CV" exact elements={
+        <Route path="/CV" exact element={
           <ViewCV />
         }></Route>
-        <Route path="/Socials" exact elements={
+        <Route path="/Socials" exact element={
           <Socials />
         }></Route>
       </Routes>

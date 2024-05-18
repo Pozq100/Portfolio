@@ -1,5 +1,8 @@
 const Socials = () => {
-
+    return (
+        <div>
+        </div>
+    )
 }
 
 

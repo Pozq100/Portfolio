@@ -29,13 +29,13 @@ function MiddleSection(){
         const newButton = document.getElementById('SortByNew');
 
         if (newButton && newButton.classList.contains("Selected")) {
-            setItem(newItem.sort((a, b) => parseInt(b.id) - parseInt(a.id)));
+            setItem(newItem.sort((a, b) => new Date(b.updated_date) - new Date(a.updated_date)));
             
         } else if (newButton && !newButton.classList.contains("Selected")) {
-            setItem(newItem.sort((a, b) => parseInt(a.id) - parseInt(b.id)));
+            setItem(newItem.sort((a, b) => new Date(a.updated_date) - new Date(b.updated_date)));
             
         } else {
-            setItem(newItem.sort((a, b) => parseInt(b.id) - parseInt(a.id)));
+            setItem(newItem.sort((a, b) => new Date(b.updated_date) - new Date(a.updated_date)));
             
         }
     }

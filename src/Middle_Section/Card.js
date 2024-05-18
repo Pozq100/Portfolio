@@ -10,7 +10,7 @@ const Card = ({ item }) => {
 
     const redirectTo = (link, event) => {
         event.stopPropagation();
-        window.location.href = link;
+        window.open(link, '_blank').focus();
     }
 
     return (
@@ -28,8 +28,8 @@ const Card = ({ item }) => {
                     <div className="cardTitle">{Val.title}</div>
                     <p className="cardContent">{Val.content}</p>
                     <div className="cardButtons">
-                        <NavLink to={Val.demo} exact><button className="DemoButton" onClick={(event) => redirectTo(Val.demo, event)}>Link to Demo</button></NavLink>
-                        <NavLink to={Val.code}><button className="CodeButton"><img src={githubLOGO} alt="" /> Link to Code</button></NavLink>
+                        <button className="DemoButton" onClick={(event) => redirectTo(Val.demo, event)}>Link to Demo</button>
+                        <button className="CodeButton" onClick={(event) => redirectTo(Val.code, event)}><img src={githubLOGO} alt="" /> Link to Code</button>
                     </div>
                 </div>
             </div>

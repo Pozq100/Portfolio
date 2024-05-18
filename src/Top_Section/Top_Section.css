@@ -27,6 +27,15 @@
 }
 
 /*------------------------- Intro ------------------------------- */
+.IntroContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0 20px 0;
+}
+
 .IntroWords{
     color: white;
     text-shadow: 0 0 8px white;
@@ -41,4 +50,10 @@
     color: var(--neon_green);
     text-shadow: 0 0 8px var(--neon_green);
     text-decoration: underline;
+}
+
+.IntroImage{
+    width: 20vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
 }
