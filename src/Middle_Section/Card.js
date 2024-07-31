@@ -1,5 +1,5 @@
 import githubLOGO from '../Assets/github_LOGO.png';
-import { useNavigate, NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Card = ({ item }) => {
     const navigate = useNavigate();
