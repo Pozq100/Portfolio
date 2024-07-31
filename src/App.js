@@ -13,6 +13,8 @@ import ViewCV from './CV/ViewCV';
 
 import Socials from './Socials/Socials';
 
+import Certs from './Certs/Certs';
+
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +31,9 @@ function App() {
         }></Route>
         <Route path="/CV" exact element={
           <ViewCV />
+        }></Route>
+        <Route path="/Certs" exact element={
+          <Certs />
         }></Route>
         <Route path="/Socials" exact element={
           <Socials />

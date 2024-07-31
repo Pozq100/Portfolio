@@ -1,0 +1,21 @@
+.title{
+    color: var(--neon_green);
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+.content{
+    width: 50%;
+}
+
+.CVcontainer{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

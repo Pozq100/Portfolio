@@ -75,7 +75,7 @@
 }
 
 .cardContent{
-    max-height: 75%;
+    max-height: 70%;
     grid-column: 2;
     color: white;
     padding: 10px 0 0 30px;
